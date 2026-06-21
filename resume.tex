@@ -137,7 +137,8 @@
       {Adobe}{01/2025 -- Present}
       {Software Engineer}{Bucharest}
         \resumeItemListStart
-            \resumeItem{Developed, integrated, and evaluated four model configurations of the new \textbf{AWS Claude Bedrock} model against the baseline \textbf{Azure OpenAI} models inside the agent orchestrator platform, using \textbf{LiteLLM} as an extension to the \textbf{OpenAI Agents SDK}.}
+            \resumeItem{Integrated \textbf{AWS Bedrock Claude} as a new model provider in the agent orchestration platform, using \textbf{LiteLLM} to extend the existing model execution layer beyond \textbf{Azure OpenAI}.}
+            \resumeItem{Designed a cloud-agnostic LLM abstraction with provider-specific defaults for Azure and AWS deployments, and validated four Claude Bedrock configurations against baseline \textbf{Azure OpenAI} models through routing performance analysis and regression testing.}
             \resumeItem{Built a \textbf{Jenkins} regression pipeline triggered on PR that uploads manifest/agent cards changes to blob storage, provisions an ephemeral environment for AO, and runs the full agent regression suite.}
             \resumeItem{Prototyped cloud-native AI governance (\textbf{Bedrock Guardrails} + \textbf{Azure AI Content Safety}) for pre-inference prompt checking and sanitization.}
             \resumeItem{Contributed to the manifest/agent cards configuration store service (REST API, CI/CD checks, multi-region/multi-cloud deploys); built a blob migration tool for migrating already cloud-stored manifests on schema changes.}
