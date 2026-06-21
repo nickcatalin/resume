@@ -137,14 +137,14 @@
       {Adobe}{01/2025 -- Present}
       {Software Engineer}{Bucharest}
         \resumeItemListStart
-            \resumeItem{Integrated \textbf{AWS Bedrock Claude} into the \textbf{Agent Orchestrator} using \textbf{LiteLLM}, designing a multi-cloud LLM abstraction with provider-specific defaults and validating \textbf{Claude} configurations against \textbf{Azure OpenAI} baselines through routing performance analysis and regression testing.}
-            \resumeItem{Built a \textbf{Jenkins} PR validation pipeline for LLM manifest changes, publishing the manifests to \textbf{Azure Blob Storage}, provisioning ephemeral \textbf{Agent Orchestrator} environments, and running pre-merge regression suites.}
-            \resumeItem{Prototyped pre-inference prompt validation using \textbf{Bedrock Guardrails} and \textbf{Azure AI Content Safety} to detect banned words and sanitize unsafe user inputs before model execution.}
-            \resumeItem{Contributed to \textbf{Agent Orchestrator} by developing tenant-level configuration and sharing workflows for \textbf{Brand Concierge} using A2A Manifests and Agent Cards, facilitating broader customer adoption.}
-            \resumeItem{Enhanced the \textbf{Manifest Configuration Service} by building an async blob-to-blob migration tool that upgrades legacy \textbf{Azure Blob Storage} and \textbf{AWS S3} manifests to typed code schemas during service startup.}
             \resumeItem{Contributed to re-architecting a \textbf{Retrieval-Augmented Generation (RAG)} ingestion system, transitioning a single synchronous service into an event-driven \textbf{Kafka} pipeline of three decoupled microservices (ingestion, chunking, and embedding) for reliable large-file processing and independent scaling.}
+            \resumeItem{Integrated \textbf{AWS Bedrock Claude} into the \textbf{Agent Orchestrator} using \textbf{LiteLLM}, designing a multi-cloud LLM abstraction with cloud provider specific defaults and validating \textbf{Claude} configurations against \textbf{Azure OpenAI} baselines through routing performance analysis and regression testing.}
+            \resumeItem{Prototyped pre-inference prompt validation using \textbf{Bedrock Guardrails} and \textbf{Azure AI Content Safety} to detect banned words and sanitize unsafe user inputs before model execution.}
+            \resumeItem{Designed and built a cloud-agnostic storage handler library that routes documents to \textbf{Azure Blob Storage} or \textbf{AWS S3} based on the service cloud provider, later serving as the storage layer for the \textbf{Manifest Configuration Service}.}
             \resumeItem{Designed REST APIs to ingest and index multiple document types (PDF, Markdown, plaintext) using \textbf{Sentence Transformers} and \textbf{OpenAI} embedding models.}
-            \resumeItem{Designed and built a cloud-agnostic storage handler library that routes documents to \textbf{Azure Blob Storage} or \textbf{AWS S3} based on the deployed cloud, later serving as the storage layer for the \textbf{Manifest Configuration Service}.}
+            \resumeItem{Contributed to \textbf{Agent Orchestrator} by developing tenant-level configuration and sharing workflows for \textbf{Brand Concierge} using A2A Manifests and Agent Cards, facilitating broader customer adoption.}
+            \resumeItem{Enhanced the \textbf{Manifest Configuration Service} by building an async blob-to-blob migration tool that upgrades legacy cloud stored manifests to typed code schemas during service startup.}
+            \resumeItem{Built a \textbf{Jenkins} PR validation pipeline for A2A manifest changes, publishing the manifests to \textbf{Azure Blob Storage}, provisioning ephemeral \textbf{Agent Orchestrator} environments, and running pre-merge regression suites.}
             \resumeItem{Deployed and managed services on AWS and Azure Kubernetes (\textbf{ArgoCD}, \textbf{Helm Charts}), overseeing rollouts, end-to-end validations, scaling, monitoring, and incident response (\textbf{Prometheus}, \textbf{Grafana}).}
             \resumeItem{Participated in on-call rotations to quickly diagnose and resolve production incidents across multiple services, maintaining high system reliability and ensuring seamless feature rollouts.}
             \resumeItem{Mentored engineers and led knowledge-sharing sessions across the team.}
@@ -154,8 +154,8 @@
       {Adobe}{07/2024 -- 12/2024}
       {Software Engineer Intern}{Bucharest}
       \resumeItemListStart
-        \resumeItem{Implemented \textbf{Kafka}/\textbf{PostgreSQL} health-check monitoring wired into \textbf{Kubernetes} readiness probes, async end-to-end tests, and document retention/delete policies across \textbf{Azure Blob Storage} and \textbf{AWS S3}.}
         \resumeItem{Led comparative POCs of vector databases (\textbf{Pinecone}, \textbf{Milvus}, \textbf{pgvector}) for storing document embeddings, assessing query performance, scalability, and operational overhead.}
+        \resumeItem{Implemented \textbf{Kafka}/\textbf{PostgreSQL} health-check monitoring wired into \textbf{Kubernetes} readiness probes, async end-to-end tests, and document retention/delete policies across \textbf{Azure Blob Storage} and \textbf{AWS S3}.}
         \resumeItem{Built multiple \textbf{Jenkins} pipelines to publish shared \textbf{Python} libraries to internal package registries, with automated version-bump on release.}
       \resumeItemListEnd
 
