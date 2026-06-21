@@ -141,6 +141,9 @@
             \resumeItem{Built a \textbf{Jenkins} regression pipeline triggered on PR that uploads manifest/agent cards changes to blob storage, provisions an ephemeral environment for AO, and runs the full agent regression suite.}
             \resumeItem{Prototyped cloud-native AI governance (\textbf{Bedrock Guardrails} + \textbf{Azure AI Content Safety}) for pre-inference prompt checking and sanitization.}
             \resumeItem{Contributed to the manifest/agent cards configuration store service (REST API, CI/CD checks, multi-region/multi-cloud deploys); built a blob migration tool for migrating already cloud-stored manifests on schema changes.}
+            \resumeItem{Contributed to re-architecting the ingestion system from a single synchronous application into an asynchronous \textbf{Kafka} pipeline with separate ingestion, chunking, and embedding services, enabling reliable large-file handling and independent horizontal scaling.}
+            \resumeItem{Designed REST APIs to ingest and index multiple document types (PDF, Markdown, plaintext) using \textbf{Sentence Transformers} and \textbf{OpenAI} embedding models.}
+            \resumeItem{Designed and built a cloud-agnostic storage handler library that transparently routes documents to \textbf{Azure Blob Storage}, \textbf{Azure File Storage}, or \textbf{AWS S3} based on the deployed cloud, later becoming the backbone for a new internal project focused on manifest and agent-card configuration storage.}
             \resumeItem{Deployed and operated microservices on AWS and Azure Kubernetes with \textbf{Argo CD} and \textbf{Helm} using path-filtered pipelines; oversaw multi-region rollouts, scaling, monitoring (\textbf{Prometheus/Grafana}), and incident response.}
             \resumeItem{Built path-filtered CI checks per service with \textbf{Kafka Testcontainers} for realistic integration tests and live \textbf{Alembic} migrations against \textbf{PostgreSQL}.}
             \resumeItem{Mentored engineers and led knowledge-sharing sessions across the team.}
@@ -150,9 +153,6 @@
       {Adobe}{07/2024 -- 12/2024}
       {Software Engineer Intern}{Bucharest}
       \resumeItemListStart
-        \resumeItem{Contributed to re-architecting the ingestion system from a single synchronous application into a three-stage asynchronous \textbf{Kafka} pipeline (ingestion $\rightarrow$ chunking $\rightarrow$ embedding services), enabling reliable large-file handling and independent horizontal scaling.}
-        \resumeItem{Designed REST APIs to ingest and index multiple document types (PDF, Markdown, plaintext), with system and user-level collection permissions, tenant isolation, and per-service code metrics.}
-        \resumeItem{Designed and built a cloud-agnostic storage handler library that transparently routes documents to \textbf{Azure Blob Storage}, \textbf{Azure File Storage}, or \textbf{AWS S3} based on the deployed cloud, later reused as the foundation for storing agent manifests/cards.}
         \resumeItem{Implemented Kafka/PostgreSQL health-check monitoring wired into Kubernetes readiness probes, async end-to-end tests, and document retention/delete policies across Azure and S3.}
         \resumeItem{Led comparative POCs of vector databases (\textbf{Pinecone}, \textbf{Milvus}, \textbf{pgvector}) for storing document embeddings, assessing query performance, scalability, and operational overhead.}
         \resumeItem{Built multiple Jenkins pipelines to publish shared Python libraries to internal package registries, with automated version-bump on release.}
